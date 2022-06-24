@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi_Level_Dropdown_Navigation_Menu_Using_Bootstrap5_And_Sass</title>
+  <!-- Google Font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome Css -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Main Stylesheet Css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-secondary">
+  <header class="header bg-white py-3">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="media/imgs/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContentOne" aria-controls="navbarContentOne" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-black navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContentOne">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mt-3 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-black" href="#" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" data-bs-auto-close="outside" id="dropdownMenuOne">
+                Mutlilevel
+              </a>
+              <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuOne">
+                <li><a class="dropdown-item text-black py-2" href="#">Galley</a></li>
+                <li><a class="dropdown-item text-black py-2" href="#">Blog</a></li>
+                <!-- Submenu Left -->
+                <li class="dropstart">
+                  <a class="dropdown-item dropdown-toggle text-black py-2" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuTwo">Submenu Left</a>
+                  <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuTwo">
+                    <li><a class="dropdown-item text-black py-2" href="#">Level 1</a></li>
+                    <li><a class="dropdown-item text-black py-2" href="#">Level 2</a></li>
+                    <li><a class="dropdown-item text-black py-2" href="#">Level 3</a></li>
+                    <li><a class="dropdown-item text-black py-2" href="#">Level 4</a></li>
+                    <li><a class="dropdown-item text-black py-2" href="#">Level 5</a></li>
+                  </ul>
+
+                </li>
+                <!-- Submenu Right -->
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle text-black py-2" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" id="dropdownMenuThree">
+                    Submenu Right
+                  </a>
+                  <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuThree">
+                    <li><a class="dropdown-item text-black py-2" href="#">Level 1</a></li>
+                    <li><a class="dropdown-item text-black py-2" href="#">Level 2</a></li>
+                    <li><a class="dropdown-item text-black py-2" href="#">Level 3</a></li>
+                    <li class="dropend">
+                      <a class="dropdown-item dropdown-toggle text-black py-2" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"
+                        id="dropdownMenuFour">
+                        Lets Go Deeper
+                      </a>
+                      <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuFour">
+                        <li><a class="dropdown-item text-black py-2" href="#">Level 1</a></li>
+                        <li><a class="dropdown-item text-black py-2" href="#">Level 2</a></li>
+                        <li><a class="dropdown-item text-black py-2" href="#">Level 3</a></li>
+                        <li class="dropend">
+                          <a class="dropdown-item dropdown-toggle text-black py-2" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuFive">
+                            Go Much Deeper
+                          </a>
+                          <ul class="dropdown-menu shadow" aria-labelledby="dropdownMenuFour">
+                            <li><a class="dropdown-item text-black py-2" href="#">Level 1</a></li>
+                            <li><a class="dropdown-item text-black py-2" href="#">Level 2</a></li>
+                            <li><a class="dropdown-item text-black py-2" href="#">Level 3</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-black" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown mega-menu">
+              <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" data-bs-auto-close="outside" id="dropdownMegaMenu">
+                Mega Menu
+              </a>
+              <div class="dropdown-menu shadow" aria-labelledby="dropdownMegaMenu">
+                <div class="container">
+                  <div class="row g-0">
+                    <div class="list-group col-sm-6 col-lg-3">
+                      <h5 class="m-3 mx-lg-0">Services</h5>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">An item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A second item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A third item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A fourth item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A fifth one</a>
+                    </div>
+                    <div class="list-group col-sm-6 col-lg-3">
+                      <h5 class="m-3 mx-lg-0">Products</h5>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">An item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A second item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A third item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A fourth item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A fifth one</a>
+                    </div>
+                    <div class="list-group col-sm-6 col-lg-3">
+                      <h5 class="m-3 mx-lg-0">Info</h5>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">An item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A second item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A third item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A fourth item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A fifth one</a>
+                    </div>
+                    <div class="list-group col-sm-6 col-lg-3">
+                      <h5 class="m-3 mx-lg-0">Others</h5>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">An item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A second item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A third item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A fourth item</a>
+                      <a href="#" class="list-group-item py-3 border-0 px-lg-0">A fifth one</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-black">Disabled</a>
+            </li>
+          </ul>
+          <form class="form d-flex">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search ..">
+              <button class="btn btn-outline-primary shadow-none" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Font Awesome Js -->
+  <script src="js/all.min.js"></script>
+  <!-- Bootstrap Js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Main Script Js -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

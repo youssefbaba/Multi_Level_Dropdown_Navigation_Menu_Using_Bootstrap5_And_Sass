@@ -1,0 +1,87 @@
+@use "../node_modules/sass-rem/rem"as *;
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+
+// 2. Include any default variable overrides here
+
+
+// 3.Include all of Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// Then add additional custom code here
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  .navbar {
+    &-nav {
+      gap: 0 1.25rem;
+
+      .nav-item {
+        letter: {
+          spacing: 1px;
+        }
+
+        margin: {
+          top: rem(5px);
+          bottom: rem(5px);
+        }
+      }
+
+      .dropdown {
+        &-item {
+          &:hover {
+            background: {
+              color: $primary;
+            }
+
+            color: $white !important;
+          }
+        }
+
+        .list-group {
+          &-item {
+            &:hover {
+              color: $primary !important;
+            }
+          }
+        }
+
+        &.mega-menu {
+          @include media-breakpoint-up(lg) {
+            position: static;
+          }
+
+          .dropdown-menu {
+            @include media-breakpoint-up(lg) {
+              width: 100vw;
+            }
+          }
+        }
+      }
+    }
+
+    .form {
+      margin: {
+        top: rem(18px);
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: {
+          top: 0;
+        }
+      }
+
+      .form-control {
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
